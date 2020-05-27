@@ -49,8 +49,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/resources/scss/_main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="159">
-                  <caret line="456" column="14" selection-start-line="456" selection-start-column="14" selection-end-line="456" selection-end-column="14" />
+                <state relative-caret-position="178">
+                  <caret line="457" column="13" lean-forward="true" selection-start-line="457" selection-start-column="13" selection-end-line="457" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -195,7 +195,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="3154" />
     <option name="y" value="6" />
-    <option name="width" value="1275" />
+    <option name="width" value="1266" />
     <option name="height" value="1374" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -338,7 +338,7 @@
       <updated>1590544948184</updated>
       <workItem from="1590544949371" duration="7553000" />
       <workItem from="1590555059767" duration="556000" />
-      <workItem from="1590555700106" duration="5936000" />
+      <workItem from="1590555700106" duration="6319000" />
     </task>
     <task id="LOCAL-00001" summary="홈페이지 HTML생성">
       <created>1590554679486</created>
@@ -382,11 +382,18 @@
       <option name="project" value="LOCAL" />
       <updated>1590557305071</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="작업진행중">
+      <created>1590561829416</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590561829416</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14045000" />
+    <option name="totallyTimeSpent" value="14428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3154" y="6" width="1275" height="1374" extended-state="0" />
@@ -463,7 +470,8 @@
     <MESSAGE value="홈페이지 HTML생성" />
     <MESSAGE value="폴더추가" />
     <MESSAGE value="홈페이지생성 중" />
-    <option name="LAST_COMMIT_MESSAGE" value="홈페이지생성 중" />
+    <MESSAGE value="작업진행중" />
+    <option name="LAST_COMMIT_MESSAGE" value="작업진행중" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dist/index.html" />
@@ -572,17 +580,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/scss/_main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="456" column="14" selection-start-line="456" selection-start-column="14" selection-end-line="456" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/scss/_life.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="690" column="21" selection-start-line="690" selection-start-column="21" selection-end-line="690" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/scss/_main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="457" column="13" lean-forward="true" selection-start-line="457" selection-start-column="13" selection-end-line="457" selection-end-column="13" />
         </state>
       </provider>
     </entry>

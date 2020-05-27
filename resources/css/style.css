@@ -1756,6 +1756,14 @@ button.swiper-pagination-bullet {
     .btnBasics b:nth-of-type(4) {
       --clip: inset(0 100% 0 0); }
 
+#section2 .number {
+  position: absolute;
+  left: 137px;
+  bottom: 88px; }
+  #section2 .number span {
+    color: #fff;
+    font-size: 20px; }
+
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {
   transition-duration: 50ms; }
 

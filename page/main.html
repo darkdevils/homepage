@@ -127,6 +127,10 @@
               논리적인 UIUX 설계합니다 </div>
           </div>
         </div>
+        <div class="number">
+          <span class="changeNum">1</span>
+          <span class="totalNum"></span>
+        </div>
       </section>
       <!-- // Who we are -->
 
@@ -224,6 +228,9 @@ $(function(){
   var slideIndex  = 1, sliding     = false;
   var length = $("#section2 .slide").length;
 
+
+  $("#section2 .totalNum").text(length);
+
   $('#pagepiling').fullpage({
     scrollingSpeed:500,
     css3: true,
@@ -247,8 +254,11 @@ $(function(){
     },
     afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
       sliding = false;
+      var indexNum = $("#section2 .slide.active").index();
+      $("#section2 .changeNum").text(slideIndex + 1);
     }
   });
+
 });
 </script>
 </body>

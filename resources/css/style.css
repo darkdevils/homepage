@@ -242,88 +242,6 @@
       transform: translate(0px, 0px); }
   .wrapper .container .main-content #section5 {
     background: #fff; }
-    .wrapper .container .main-content #section5 .main-contact {
-      position: relative;
-      width: 70%;
-      height: auto;
-      margin: 0 auto;
-      overflow: hidden; }
-      .wrapper .container .main-content #section5 .main-contact #myVideo {
-        width: 100%;
-        height: 100%; }
-      .wrapper .container .main-content #section5 .main-contact .main-contact-txt {
-        position: absolute;
-        width: 100%;
-        /*height: 100%;*/
-        top: 0;
-        left: 0;
-        text-align: center;
-        z-index: 1; }
-        .wrapper .container .main-content #section5 .main-contact .main-contact-txt .contact-h {
-          font-size: 40px;
-          font-weight: 500;
-          padding-top: 14%; }
-        .wrapper .container .main-content #section5 .main-contact .main-contact-txt .contact-xt {
-          font-size: 16px;
-          font-weight: 500;
-          margin-top: 1.9%; }
-          .wrapper .container .main-content #section5 .main-contact .main-contact-txt .contact-xt a {
-            color: #707070; }
-        .wrapper .container .main-content #section5 .main-contact .main-contact-txt .contact-btn {
-          margin-top: 10%; }
-          .wrapper .container .main-content #section5 .main-contact .main-contact-txt .contact-btn a {
-            position: relative;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 0 40px; }
-            .wrapper .container .main-content #section5 .main-contact .main-contact-txt .contact-btn a:after {
-              content: "";
-              width: 100%;
-              height: 1px;
-              background-color: #000;
-              position: absolute;
-              left: 0;
-              bottom: -10px; }
-      .wrapper .container .main-content #section5 .main-contact:before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        display: block;
-        background: url(../images/main/xt-logo.svg) no-repeat;
-        background-size: cover;
-        background-position: center center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: 1; }
-      .wrapper .container .main-content #section5 .main-contact:after {
-        content: "";
-        width: 100%;
-        height: 8px;
-        display: block;
-        position: absolute;
-        bottom: 7%;
-        left: 0;
-        background: linear-gradient(137deg, #00C691, #2e3bee, #00C691, #2e3bee);
-        background-size: 200% 100%;
-        -webkit-animation: AnimationName 4s ease infinite;
-        animation: AnimationName 4s ease infinite; }
-      .wrapper .container .main-content #section5 .main-contact -webkit-keyframes AnimationName 0% {
-        background-position: 0% 50%; }
-      .wrapper .container .main-content #section5 .main-contact -webkit-keyframes AnimationName 50% {
-        background-position: 100% 50%; }
-      .wrapper .container .main-content #section5 .main-contact -webkit-keyframes AnimationName 100% {
-        background-position: 0% 50%; }
-
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
   .wrapper .container .main-content .main-section .bar-txt {
     position: relative; }
     .wrapper .container .main-content .main-section .bar-txt:before {
@@ -376,6 +294,94 @@
     background-size: 100% 2px;
     -webkit-transition: background-size 1.5s ease-in-out 1s;
     transition: background-size 1.5s ease-in-out 1s; }
+
+/* 공통 */
+.main-contact {
+  position: relative;
+  top: -82px;
+  left: -25px;
+  width: 73%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden; }
+  .main-contact video {
+    width: 100%; }
+  .main-contact #myVideo {
+    width: 100%;
+    height: 100%; }
+  .main-contact .main-contact-txt {
+    position: absolute;
+    width: 100%;
+    /*height: 100%;*/
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1; }
+    .main-contact .main-contact-txt .contact-h {
+      font-size: 2.0833vw;
+      font-weight: 500;
+      padding-top: 14%; }
+    .main-contact .main-contact-txt .contact-xt {
+      font-size: 0.8333vw;
+      font-weight: 500;
+      margin-top: 1.9%; }
+      .main-contact .main-contact-txt .contact-xt a {
+        color: #707070; }
+    .main-contact .main-contact-txt .contact-btn {
+      margin-top: 10%; }
+      .main-contact .main-contact-txt .contact-btn a {
+        position: relative;
+        font-size: 1.0417vw;
+        font-weight: 700;
+        margin: 0 40px; }
+        .main-contact .main-contact-txt .contact-btn a:after {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background-color: #000;
+          position: absolute;
+          left: 0;
+          bottom: -10px; }
+  .main-contact:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../images/main/xt-logo.svg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1; }
+  .main-contact:after {
+    content: "";
+    width: 100%;
+    height: 8px;
+    display: block;
+    position: absolute;
+    bottom: 7%;
+    left: 0;
+    background: linear-gradient(137deg, #00C691, #2e3bee, #00C691, #2e3bee);
+    background-size: 200% 100%;
+    -webkit-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite; }
+  .main-contact -webkit-keyframes AnimationName 0% {
+    background-position: 0% 50%; }
+  .main-contact -webkit-keyframes AnimationName 50% {
+    background-position: 100% 50%; }
+  .main-contact -webkit-keyframes AnimationName 100% {
+    background-position: 0% 50%; }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 
 /* font */
 @font-face {
@@ -1203,7 +1209,8 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden; }
 
 :root {
-  --font-size: 10px; }
+  --font-size: 10px;
+  --bg: #fafafa; }
 
 .life__content {
   background: #00C691; }
@@ -1630,7 +1637,7 @@ button.swiper-pagination-bullet {
         line-height: 2em;
         margin-top: 2vw; }
     .life__content .xtMemberLiefPhoto ul {
-      margin-top: 3.5vw; }
+      margin: 3.5vw 14.4792vw 0; }
       .life__content .xtMemberLiefPhoto ul li {
         display: flex;
         justify-content: center; }
@@ -1656,6 +1663,14 @@ button.swiper-pagination-bullet {
               -webkit-filter: grayscale(0%);
               filter: none;
               transform: scale(1.02); }
+  .life__content .btnMore {
+    margin-top: 3.1250vw;
+    text-align: center; }
+  .life__content .main-contact {
+    margin-top: 13.9063vw; }
+    .life__content .main-contact:before {
+      background: url(../images/common/xt-logo-green.svg) no-repeat;
+      background-size: cover; }
 
 @-webkit-keyframes typo01-after {
   0% {
@@ -1692,6 +1707,78 @@ button.swiper-pagination-bullet {
   100% {
     -webkit-transform: scaleY(2);
     transform: scaleY(2); } }
+
+.btnBasics {
+  --borderWidth: 2;
+  --boxShadowDepth: 8;
+  --buttonColor: #fff;
+  --fontSize: 1;
+  --horizontalPadding: 16;
+  --verticalPadding: 8;
+  background: transparent;
+  border: calc(var(--borderWidth) * 1px) solid var(--buttonColor);
+  /*box-shadow: calc(var(--boxShadowDepth) * 1px) calc(var(--boxShadowDepth) * 1px) 0 #888;*/
+  color: var(--buttonColor);
+  cursor: pointer;
+  font-size: 0.7292vw;
+  outline: transparent;
+  padding: calc(var(--verticalPadding) * 1px) calc(var(--horizontalPadding) * 1px);
+  position: relative;
+  -webkit-transition: box-shadow 0.15s ease;
+  transition: box-shadow 0.15s ease;
+  width: 9.3750vw;
+  height: 3.1250vw; }
+  .btnBasics span {
+    -webkit-clip-path: var(--clip);
+    bottom: calc(var(--borderWidth) * -1px);
+    clip-path: var(--clip);
+    left: calc(var(--borderWidth) * -1px);
+    position: absolute;
+    right: calc(var(--borderWidth) * -1px);
+    top: calc(var(--borderWidth) * -1px);
+    z-index: 1; }
+    .btnBasics span:hover {
+      --clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      z-index: 2; }
+    .btnBasics span:nth-of-type(1):hover, .btnBasics span:nth-of-type(2):hover, .btnBasics span:nth-of-type(3):hover, .btnBasics span:nth-of-type(4):hover {
+      --clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      z-index: 2; }
+    .btnBasics span:nth-of-type(1):hover ~ b:nth-of-type(1), .btnBasics span:nth-of-type(2):hover ~ b:nth-of-type(2), .btnBasics span:nth-of-type(3):hover ~ b:nth-of-type(3), .btnBasics span:nth-of-type(4):hover ~ b:nth-of-type(4) {
+      --clip: inset(0 0 0 0); }
+    .btnBasics span:nth-of-type(1) {
+      --clip: polygon(0 0, 100% 0, 50% 50%, 50% 50%); }
+    .btnBasics span:nth-of-type(2) {
+      --clip: polygon(100% 0, 100% 100%, 50% 50%); }
+    .btnBasics span:nth-of-type(3) {
+      --clip: polygon(0 100%, 100% 100%, 50% 50%); }
+    .btnBasics span:nth-of-type(4) {
+      --clip: polygon(0 0, 0 100%, 50% 50%); }
+  .btnBasics b {
+    -webkit-clip-path: var(--clip);
+    background: var(--buttonColor);
+    border: calc(var(--borderWidth) * 1px) solid var(--buttonColor);
+    bottom: calc(var(--borderWidth) * -1px);
+    /*font-weight: bold;*/
+    clip-path: var(--clip);
+    color: #000;
+    left: calc(var(--borderWidth) * -1px);
+    padding: calc(var(--verticalPadding) * 1px) calc(var(--horizontalPadding) * 1px);
+    position: absolute;
+    right: calc(var(--borderWidth) * -1px);
+    top: calc(var(--borderWidth) * -1px);
+    -webkit-transition: -webkit-clip-path 0.25s ease;
+    transition: -webkit-clip-path 0.25s ease;
+    transition: clip-path 0.25s ease;
+    transition: clip-path 0.25s ease, -webkit-clip-path 0.25s ease;
+    line-height: 2em; }
+    .btnBasics b:nth-of-type(1) {
+      --clip: inset(0 0 100% 0); }
+    .btnBasics b:nth-of-type(2) {
+      --clip: inset(0 0 0 100%); }
+    .btnBasics b:nth-of-type(3) {
+      --clip: inset(100% 0 0 0); }
+    .btnBasics b:nth-of-type(4) {
+      --clip: inset(0 100% 0 0); }
 
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {
   transition-duration: 50ms; }

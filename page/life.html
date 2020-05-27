@@ -95,15 +95,18 @@
     <div class="xtlogo" data-aos="fade-up">
       <div class="yellowBox"></div>
       <div class="logoImg" data-aos="fade-up"><img src="../resources/images/life/xtlogo.svg" alt=""></div>
-      <div class="textMask" data-aos="fade-left">따로<br>도 같이</div>
+      <div class="textMask" data-aos="fade-left"><span class="text">따로<br>또 같이</span> <span class="circle"></span></div>
     </div>
     <!-- //로고 -->
 
-    <div class="swiperArea" data-aos="fade" data-aos-offset="500">
-      <div class="border"></div>
-      <div class="swiper-container">
+    <div class="swiperArea" data-aos="fade" data-aos-offset="300">
+      <div class="border">
+        <span class="top"></span>
+        <span class="bottom"></span>
+      </div>
+      <div class="swiper-container" data-aos="fade-right" data-aos-delay="2000">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper" data-aos="fade">
+        <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide"><img src="../resources/images/temp/img01.jpg" alt=""></div>
           <div class="swiper-slide"><img src="../resources/images/temp/img01.jpg" alt=""></div>
@@ -257,43 +260,30 @@
       duration: 1200,
       offset: 120,
     });
-    var swiper = new Swiper('.swiper-container', {
+    var mySwiper = new Swiper('.swiper-container', {
+      speed: 2000,
+      spaceBetween: 0,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
       pagination: {
         el: '.swiper-pagination',
-        type: 'fraction',
-        mousewheelControl: true,
-      },
+      }
     });
     $(window).resize(function () {
+      console.log('111111');
       $(".swiper-slide").css("width", $(window).width());
     });
-    var slideIndex  = 1, sliding     = false;
-    var length = $("#section2 .slide").length;
 
-    $('#pagepiling').fullpage({
-      scrollingSpeed:500,
-      css3: true,
-      scrollOverflow: true,
-      onLeave: function(index, nextIndex, direction) {
-        if(index == 2 && !sliding) {
-          if(direction == 'down' && slideIndex < length) {
-            sliding = true;
-            $.fn.fullpage.moveSlideRight();
-            slideIndex++;
-            return false;
-          } else if(direction == 'up' && slideIndex > 1) {
-            sliding = true;
-            $.fn.fullpage.moveSlideLeft();
-            slideIndex--;
-            return false;
-          }
-        } else if(sliding) {
-          return false;
-        }
-      },
-      afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
-        sliding = false;
-      }
+    $(window).scroll(function(){
+      var scrollTop = $(this).scrollTop();
+      $('.xtMember > div:even').css({
+        left : -(scrollTop * 0.05) + 100
+      });
+      $('.xtMember > div:odd').css({
+        left : (scrollTop * 0.05) - 100
+      });
     });
   });
 </script>

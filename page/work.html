@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="../resources/css/style.css">
+  <title>Title</title>
+  <style>
+    html,body {overflow: initial;}
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header main">
+    <div class="skip-navi">
+      <a href="#container">본문 바로가기</a>
+      <a href="#gnb">메뉴 바로가기 test</a>
+    </div>
+    <header class="w-txt">
+      <div class="xt-ci">
+        <ul class="gnb-menu">
+          <li class="gnb-menu01">Who we are</li>
+          <li class="gnb-menu02">We make</li>
+          <li class="gnb-menu03">XTSIEN Life</li>
+          <li class="gnb-menu04">Contact XT</li>
+        </ul>
+      </div>
+      <div class="pdf-down">Start a project x Download pdf</div>
+      <div class="hamburger">
+        <a href="#">
+          <div class="side-open">
+            <span class="m">M</span>
+            <span class="e">E</span>
+            <span class="n">N</span>
+            <span class="u">U</span>
+          </div>
+          <div class="side-close">
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>
+      <nav>
+        <ul id="gnb">
+          <li><a href="#">XT</a></li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">XTSIEN Life</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+        <div class="profile-down">
+          <a href="#">Download XT profile pdf</a>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <div class="work__content">
+    <!-- 텍스트 애니메이션 예정 -->
+    <div class="work__content__text" data-aos="fade" >
+      <div><span>우리는 <i>새로운 것에 유연</i>합니다.</span></div>
+      <div><span>새로운 것을 만나고 많은 것을 경험하고 자라지만</span></div>
+      <div><span>우리에 시선은 항상 <i>새로운 곳을 향하여 있어</i> 멈추지 않고 ​</span></div>
+      <div><span>또 다시 지속적으로 탐구하고 그려 냅니다</span></div>
+    </div>
+    <div class="work__content__text2"><span>Growth X Flexible</span></div>
+    <!-- //텍스트 애니메이션 예정 -->
+
+    <!-- 동영상 예정 -->
+    <div class="video">
+      <img src="../resources/images/temp/video.jpg" alt="">
+    </div>
+    <!-- //동영상 예정 -->
+
+    <!-- project List -->
+    <div class="projecLList">
+      <div class="xt">
+        <span>X</span>
+        <span>T</span>
+      </div>
+      <div class="projectList__unit projectList__unit--month1">
+        <div class="img"><img src="../resources/images/works/project01.jpg" alt=""></div>
+        <div class="info">
+          <span class="title">웰리힐리파크</span>
+          <strong>당신이 상상하는</strong><br><strong>모든 것이 즐거움이 된다</strong>
+          <a href="#" class="link"><span>eXperience it</span></a>
+        </div>
+      </div>
+      <div class="projectList__unit projectList__unit--month2">
+        <div class="info">
+          <span class="title">한화아쿠아플라넷</span>
+          <strong>살아 숨쉬는 그 곳</strong><br><strong>즐거움이 현실이 됩니다.</strong>
+          <a href="#" class="link"><span>eXperience it</span></a>
+        </div>
+        <div class="img"><img src="../resources/images/works/project02.jpg" alt=""></div>
+      </div>
+
+    </div>
+    <!-- //project List -->
+
+  </div>
+
+  <div class="footer">
+    <p class="copy">© 2020 XT Inc.Rights Reserved.</p>
+    <p class="contact">
+      <span>T +82 2 853 6582</span>
+      <span>F  +82 2 853 6582</span>
+    </p>
+    <a href="#">
+      <span class="t">T</span>
+      <span class="o">O</span>
+      <span class="p">P</span>
+    </a>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="../resources/js/aos.js"></script>
+<script src="../resources/js/scrolloverflow.js"></script>
+<script src="../resources/js/fullpage.js"></script>
+<script src="../resources/js/swiper.js"></script>
+<script src="../resources/js/common.js"></script>
+<script>
+  $(function(){
+    AOS.init({
+      duration: 1200,
+      offset: 120,
+    });
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+        mousewheelControl: true,
+      },
+    });
+    $(window).resize(function () {
+      $(".swiper-slide").css("width", $(window).width());
+    });
+    var slideIndex  = 1, sliding     = false;
+    var length = $("#section2 .slide").length;
+
+    $('#pagepiling').fullpage({
+      scrollingSpeed:500,
+      css3: true,
+      scrollOverflow: true,
+      onLeave: function(index, nextIndex, direction) {
+        if(index == 2 && !sliding) {
+          if(direction == 'down' && slideIndex < length) {
+            sliding = true;
+            $.fn.fullpage.moveSlideRight();
+            slideIndex++;
+            return false;
+          } else if(direction == 'up' && slideIndex > 1) {
+            sliding = true;
+            $.fn.fullpage.moveSlideLeft();
+            slideIndex--;
+            return false;
+          }
+        } else if(sliding) {
+          return false;
+        }
+      },
+      afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+        sliding = false;
+      }
+    });
+  });
+</script>
+</body>
+</html>

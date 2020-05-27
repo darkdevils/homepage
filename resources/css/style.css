@@ -58,34 +58,38 @@
       margin: -114px 0 0 -517px; }
   .wrapper .container .main-content #section2 {
     background: #000; }
-    .wrapper .container .main-content #section2 .swiper-container {
-      width: 100%;
-      height: 100%; }
-      .wrapper .container .main-content #section2 .swiper-container .swiper-wrapper .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #000; }
-      .wrapper .container .main-content #section2 .swiper-container .swiper-pagination {
-        left: 125px;
-        bottom: 90px;
-        width: 40px;
-        height: 60px;
-        background: url("../images/main/paging-line.png") no-repeat center; }
-        .wrapper .container .main-content #section2 .swiper-container .swiper-pagination span {
-          position: absolute;
-          color: #fff;
-          font-size: 20px;
-          font-weight: 500; }
-          .wrapper .container .main-content #section2 .swiper-container .swiper-pagination span:first-child {
-            left: 0;
-            bottom: 30px; }
-          .wrapper .container .main-content #section2 .swiper-container .swiper-pagination span:last-child {
-            right: 0;
-            bottom: 0; }
-    .wrapper .container .main-content #section2 .weAre-txt {
+    .wrapper .container .main-content #section2 [class^="we-are"].we-are01 .weAre-txt {
+      background: url("../images/main/bg-we01.png") no-repeat right bottom; }
+      .wrapper .container .main-content #section2 [class^="we-are"].we-are01 .weAre-txt span:after {
+        background: #2e3bee; }
+    .wrapper .container .main-content #section2 [class^="we-are"].we-are02 .weAre-txt {
+      background: url("../images/main/bg-we02.png") no-repeat right bottom; }
+      .wrapper .container .main-content #section2 [class^="we-are"].we-are02 .weAre-txt span:after {
+        background: #00c691; }
+    .wrapper .container .main-content #section2 [class^="we-are"].we-are03 .weAre-txt {
+      background: url("../images/main/bg-we01.png") no-repeat right bottom; }
+      .wrapper .container .main-content #section2 [class^="we-are"].we-are03 .weAre-txt span:after {
+        background: #00c691; }
+    .wrapper .container .main-content #section2 [class^="we-are"].we-are04 .weAre-txt {
+      background: url("../images/main/bg-we02.png") no-repeat right bottom; }
+      .wrapper .container .main-content #section2 [class^="we-are"].we-are04 .weAre-txt span:after {
+        background: #00c691; }
+    .wrapper .container .main-content #section2 [class^="we-are"].we-are05 .weAre-txt {
+      background: url("../images/main/bg-we01.png") no-repeat right bottom; }
+      .wrapper .container .main-content #section2 [class^="we-are"].we-are05 .weAre-txt span:after {
+        background: #00c691; }
+    .wrapper .container .main-content #section2 [class^="we-are"].active .swiper-wrapper .swiper-slide-active .weAre-txt h2 span:after {
+      animation: proBar 3s 1s infinite alternate; }
+
+@keyframes proBar {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+    .wrapper .container .main-content #section2 [class^="we-are"] .weAre-txt {
       position: relative;
       height: 100%; }
-      .wrapper .container .main-content #section2 .weAre-txt h2 {
+      .wrapper .container .main-content #section2 [class^="we-are"] .weAre-txt h2 {
         position: absolute;
         top: 32%;
         padding-left: 125px;
@@ -95,7 +99,7 @@
         font-weight: 500;
         text-align: left;
         line-height: 1; }
-        .wrapper .container .main-content #section2 .weAre-txt h2 span {
+        .wrapper .container .main-content #section2 [class^="we-are"] .weAre-txt h2 span {
           position: relative;
           display: inline-block;
           color: #fff;
@@ -104,7 +108,7 @@
           vertical-align: top;
           padding: 15px 0;
           border-bottom: 3px solid #fff; }
-          .wrapper .container .main-content #section2 .weAre-txt h2 span:after {
+          .wrapper .container .main-content #section2 [class^="we-are"] .weAre-txt h2 span:after {
             content: "";
             display: block;
             width: 0;
@@ -112,7 +116,7 @@
             position: absolute;
             bottom: -3px;
             left: 0; }
-      .wrapper .container .main-content #section2 .weAre-txt div {
+      .wrapper .container .main-content #section2 [class^="we-are"] .weAre-txt div {
         position: absolute;
         top: 62%;
         padding-left: 300px;
@@ -120,34 +124,6 @@
         color: #fff;
         text-align: left;
         line-height: 2; }
-    .wrapper .container .main-content #section2.we-are01 .weAre-txt {
-      background: url("../images/main/bg-we01.png") no-repeat right bottom; }
-      .wrapper .container .main-content #section2.we-are01 .weAre-txt span:after {
-        background: #2e3bee; }
-    .wrapper .container .main-content #section2.we-are02 .weAre-txt {
-      background: url("../images/main/bg-we02.png") no-repeat right bottom; }
-      .wrapper .container .main-content #section2.we-are02 .weAre-txt span:after {
-        background: #00c691; }
-    .wrapper .container .main-content #section2.we-are03 .weAre-txt {
-      background: url("../images/main/bg-we01.png") no-repeat right bottom; }
-      .wrapper .container .main-content #section2.we-are03 .weAre-txt span:after {
-        background: #00c691; }
-    .wrapper .container .main-content #section2.we-are04 .weAre-txt {
-      background: url("../images/main/bg-we02.png") no-repeat right bottom; }
-      .wrapper .container .main-content #section2.we-are04 .weAre-txt span:after {
-        background: #00c691; }
-    .wrapper .container .main-content #section2.we-are05 .weAre-txt {
-      background: url("../images/main/bg-we01.png") no-repeat right bottom; }
-      .wrapper .container .main-content #section2.we-are05 .weAre-txt span:after {
-        background: #00c691; }
-    .wrapper .container .main-content #section2.active .swiper-wrapper .swiper-slide-active .weAre-txt h2 span:after {
-      animation: proBar 3s 1s infinite alternate; }
-
-@keyframes proBar {
-  0% {
-    width: 0; }
-  100% {
-    width: 100%; } }
   .wrapper .container .main-content #section3 {
     background: #fff; }
     .wrapper .container .main-content #section3 .main-portfolio {
@@ -187,16 +163,13 @@
           line-height: 60px;
           left: 50%;
           bottom: 60px;
+          font-size: 14px;
           text-align: center;
           margin-left: -90px;
           border: 2px solid #000; }
           .wrapper .container .main-content #section3 .main-portfolio .pt-list .pt-more a {
             width: 100%;
             height: 100%; }
-      .wrapper .container .main-content #section3 .main-portfolio .mCSB_scrollTools .mCSB_draggerRail {
-        background-color: rgba(0, 0, 0, 0); }
-      .wrapper .container .main-content #section3 .main-portfolio .mCSB_scrollTools.mCS-minimal-dark .mCSB_dragger .mCSB_dragger_bar {
-        background-color: rgba(0, 0, 0, 0); }
   .wrapper .container .main-content #section4 {
     text-align: right;
     padding-right: 60px;
@@ -207,18 +180,21 @@
       font-size: 20px; }
       .wrapper .container .main-content #section4 .main-life:before {
         background: #00c691; }
-    .wrapper .container .main-content #section4 .life-txt span.bar-txt {
-      color: #fff;
-      font-size: 50px;
-      font-weight: 700;
-      line-height: 2;
-      margin: 35px 0 10px; }
-      .wrapper .container .main-content #section4 .life-txt span.bar-txt span {
+    .wrapper .container .main-content #section4 .life-txt {
+      position: relative;
+      z-index: 1; }
+      .wrapper .container .main-content #section4 .life-txt span.bar-txt {
         color: #fff;
         font-size: 50px;
-        font-weight: 700; }
-      .wrapper .container .main-content #section4 .life-txt span.bar-txt:before {
-        background: #00c691; }
+        font-weight: 700;
+        line-height: 2;
+        margin: 35px 0 10px; }
+        .wrapper .container .main-content #section4 .life-txt span.bar-txt span {
+          color: #fff;
+          font-size: 50px;
+          font-weight: 700; }
+        .wrapper .container .main-content #section4 .life-txt span.bar-txt:before {
+          background: #00c691; }
     .wrapper .container .main-content #section4 .life-btn a {
       color: #fff;
       font-size: 16px; }
@@ -233,7 +209,7 @@
       left: 150px;
       top: 50%;
       margin-top: -265px;
-      z-index: -1;
+      /*z-index: -1;*/
       opacity: 0;
       transform: translate(0px, 180px);
       transition: transform 1.5s,opacity 1.5s; }

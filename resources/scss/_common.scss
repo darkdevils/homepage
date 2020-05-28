@@ -411,7 +411,6 @@ h1, h2, h3, h4, h5, h6, strong {
   }
 }
 
-
 /* button */
 .btnBlack {
   --borderWidth: 2;
@@ -483,7 +482,7 @@ h1, h2, h3, h4, h5, h6, strong {
     transition: -webkit-clip-path 0.25s ease;
     transition: clip-path 0.25s ease;
     transition: clip-path 0.25s ease, -webkit-clip-path 0.25s ease;
-    line-height: 2em;
+    line-height: 2vw;
     &:nth-of-type(1) {
       --clip: inset(0 0 100% 0);
     }
@@ -495,6 +494,47 @@ h1, h2, h3, h4, h5, h6, strong {
     }
     &:nth-of-type(4) {
       --clip: inset(0 100% 0 0);
+    }
+  }
+}
+
+.footer {
+  padding: 0 0 3.6458vw 3.1250vw;
+  .copy {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .contact {
+    display: inline-block;
+    margin-left: 15px;
+    span {
+      font-size: 14px;
+      font-weight: 100;
+    }
+  }
+}
+
+.btnTop {
+  position: fixed;
+  right: 3.1250vw;
+  bottom: 3.6458vw;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #000;
+  span {
+    text-align: center;
+    font-size: 13px;
+    &.t {
+      display: block;
+      position: relative;
+      top: 4px;
+    }
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    span {
+      margin: 0 2px;
     }
   }
 }

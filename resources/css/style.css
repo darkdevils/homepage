@@ -6,9 +6,6 @@
 .wrapper .header.main .pdf-down {
   color: #fff; }
 
-.wrapper .header.txt-bk {
-  color: #000; }
-
 .wrapper .container .main-content {
   /* 텍스트 효과 */ }
   .wrapper .container .main-content .pp-section {
@@ -1279,14 +1276,14 @@ button.swiper-pagination-bullet {
       opacity: 0; }
     .life__content .textBig__s {
       left: 35.2604vw;
-      top: 7.8125vw; }
+      top: 8.5938vw; }
       .life__content .textBig__s .textSmall {
         position: absolute;
         left: 5vw;
         bottom: 3.5vw; }
     .life__content .textBig__p {
       left: 55.9896vw;
-      top: 17.3611vw; }
+      top: 13.5104vw; }
       .life__content .textBig__p .big {
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
@@ -1294,18 +1291,18 @@ button.swiper-pagination-bullet {
         transform: rotate(90deg); }
       .life__content .textBig__p .textSmall {
         position: absolute;
-        top: 4.1667vw;
-        left: 3.2639vw; }
+        top: 3.1667vw;
+        left: 2.2639vw; }
     .life__content .textBig__x {
-      left: 44.8438vw;
-      top: 23.9583vw; }
+      left: 44.7917vw;
+      top: 17.9688vw; }
       .life__content .textBig__x .textSmall {
         position: absolute;
         left: 5.7vw;
         bottom: 2.71vw; }
   .life__content .videoPhoto {
     position: relative;
-    padding: 34.35vw 0 0;
+    padding: 20.9375vw 0 0;
     display: flex; }
     .life__content .videoPhoto:after {
       content: "";
@@ -1411,10 +1408,10 @@ button.swiper-pagination-bullet {
     margin-bottom: 8.8542vw; }
     .life__content .swiperArea .border {
       position: absolute;
-      width: 77.2vw;
-      height: 41vw;
+      width: 70.9896vw;
+      height: 36.4583vw;
       left: 50%;
-      margin: 0 auto 30px -38.6vw;
+      margin: 0 auto 30px -35.4948vw;
       /*overflow: hidden;*/ }
       .life__content .swiperArea .border span:before, .life__content .swiperArea .border span:after {
         content: "";
@@ -1448,27 +1445,27 @@ button.swiper-pagination-bullet {
           visibility: visible; }
         .life__content .swiperArea.aos-animate .border span.top:before {
           right: 0;
-          transition: all .5s; }
+          transition: all .4s; }
         .life__content .swiperArea.aos-animate .border span.top:after {
           bottom: 0;
-          transition: all .5s .5s; }
+          transition: all .3s .4s; }
         .life__content .swiperArea.aos-animate .border span.bottom:before {
           left: 0;
-          transition: all .5s 1s; }
+          transition: all .3s .7s; }
         .life__content .swiperArea.aos-animate .border span.bottom:after {
           top: 0;
-          transition: all .5s 1.5s; }
+          transition: all .3s 1.0s; }
     .life__content .swiperArea .swiper-container {
-      width: 77.2vw;
-      height: 41vw;
-      top: 13px;
+      width: 67.9167vw;
+      height: 33.3333vw;
+      top: 1.55vw;
       opacity: 0; }
       .life__content .swiperArea .swiper-container img {
         width: 100%; }
     .life__content .swiperArea .swiper-pagination {
       position: absolute;
       right: 16vw;
-      bottom: -4px; }
+      bottom: -3.3335vw; }
       .life__content .swiperArea .swiper-pagination .swiper-pagination-bullet {
         position: relative;
         width: 30px;
@@ -1585,7 +1582,8 @@ button.swiper-pagination-bullet {
         top: 4.3vw;
         display: inline-block;
         height: 2.65vw;
-        line-height: 2.65vw; }
+        line-height: 2.65vw;
+        padding: 0 0 0 11vw; }
         .life__content .xtMember__team .xtMember__team__memberList:after {
           content: "";
           position: absolute;
@@ -1605,13 +1603,15 @@ button.swiper-pagination-bullet {
       .life__content .xtMember__team.planner .xtMember__team__memberList {
         left: 31vw; }
         .life__content .xtMember__team.planner .xtMember__team__memberList:after {
-          background: #3742DB;
+          background: #0067e0;
           width: 45vw; }
       .life__content .xtMember__team.designer .xtMember__team__memberList {
-        right: 41.5vw; }
+        right: 23.0729vw; }
         .life__content .xtMember__team.designer .xtMember__team__memberList:after {
-          background: #00BF6C;
-          width: 50vw; }
+          background: #00e27b;
+          width: 58.4896vw;
+          right: 0;
+          left: initial; }
       .life__content .xtMember__team.publisher .xtMember__team__memberList {
         left: 31.3vw;
         width: 50vw; }
@@ -1636,7 +1636,7 @@ button.swiper-pagination-bullet {
           position: relative; }
           .life__content .xtMember__team.develover strong:after {
             content: "";
-            background: url(~assets/web/images/life/develover.svg) no-repeat;
+            background: url(../../resources/images/life/develover.svg) no-repeat;
             background-size: contain;
             position: absolute;
             top: -4.3vw;
@@ -1800,7 +1800,7 @@ button.swiper-pagination-bullet {
     transition: -webkit-clip-path 0.25s ease;
     transition: clip-path 0.25s ease;
     transition: clip-path 0.25s ease, -webkit-clip-path 0.25s ease;
-    line-height: 2em; }
+    line-height: 2vw; }
     .btnBasics b:nth-of-type(1) {
       --clip: inset(0 0 100% 0); }
     .btnBasics b:nth-of-type(2) {
@@ -3283,3 +3283,34 @@ p {
   bottom: 10px;
   right: 10px;
   z-index: 999; }
+
+.news_content {
+  margin-top: 240px; }
+  .news_content .news_list {
+    /*width: 76.5625vw;*/
+    width: 100%;
+    /*padding: 0 14.4416vw;*/
+    margin: 0 auto; }
+    .news_content .news_list > div {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      /*width: 19.7917vw;*/ }
+      .news_content .news_list > div a {
+        width: 100%;
+        height: 100%; }
+        .news_content .news_list > div a img {
+          width: 100%;
+          height: auto; }
+        .news_content .news_list > div a p.news-tit {
+          font-size: 1.5625vw;
+          margin-top: 1.5625vw; }
+        .news_content .news_list > div a span.new-desc {
+          display: block;
+          font-size: 1.0417vw;
+          padding-top: 1.0417vw; }
+  .news_content .main-contact {
+    margin-top: 7.2917vw; }
+  .news_content .btnMore {
+    /*margin-top: 3.1250vw;*/
+    text-align: center; }

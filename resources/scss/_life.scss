@@ -98,7 +98,7 @@
       @include transition(1s ease);
       &__s {
         left: 35.2604vw;
-        top: 7.8125vw;
+        top: 8.5938vw;
         .textSmall {
           position: absolute;
           left: 5vw;
@@ -107,19 +107,19 @@
       }
       &__p {
         left: 55.9896vw;
-        top: 17.3611vw;
+        top: 13.5104vw;
         .big {
           @include rotate(90deg);
         }
         .textSmall {
           position: absolute;
-          top: 4.1667vw;
-          left: 3.2639vw;
+          top: 3.1667vw;
+          left: 2.2639vw;
         }
       }
       &__x {
-        left: 44.8438vw;
-        top: 23.9583vw;
+        left: 44.7917vw;
+        top: 17.9688vw;
         .textSmall {
           position: absolute;
           left: 5.7vw;
@@ -130,7 +130,7 @@
 
     .videoPhoto {
       position: relative;
-      padding: 34.35vw 0 0;
+      padding: 20.9375vw 0 0;
       display: flex;
       &:after {
         content: "";
@@ -254,10 +254,10 @@
       margin-bottom: 8.8542vw;
       .border {
         position: absolute;
-        width: 77.2vw;
-        height: 41vw;
+        width: 70.9896vw;
+        height: 36.4583vw;
         left: 50%;
-        margin: 0 auto 30px -38.6vw;
+        margin: 0 auto 30px -35.4948vw;
         /*overflow: hidden;*/
         span {
           &:before,&:after {
@@ -301,19 +301,19 @@
             }
             &.top:before {
               right: 0;
-              transition: all .5s;
+              transition: all .4s;
             }
             &.top:after {
               bottom: 0;
-              transition: all .5s .5s;
+              transition: all .3s .4s;
             }
             &.bottom:before {
               left: 0;
-              transition: all .5s 1s;
+              transition: all .3s .7s;
             }
             &.bottom:after {
               top: 0;
-              transition: all .5s 1.5s;
+              transition: all .3s 1.0s;
             }
             &:after {
               //-webkit-transition: width 0.6s ease 0.4s, height 1.2s ease 1.2s, visibility 0s 0.5s;
@@ -323,9 +323,9 @@
         }
       }
       .swiper-container {
-        width: 77.2vw;
-        height: 41vw;
-        top: 13px;
+        width: 67.9167vw;
+        height: 33.3333vw;
+        top: 1.55vw;
         opacity: 0;
         //transition: 3s cubic-bezier(.42,.02,.99,-0.01);
         img {
@@ -335,7 +335,7 @@
       .swiper-pagination {
         position: absolute;
         right: 16vw;
-        bottom: -4px;
+        bottom: -3.3335vw;
         .swiper-pagination-bullet {
           position: relative;
           width: 30px;
@@ -458,6 +458,7 @@
           display: inline-block;
           height: 2.65vw;
           line-height: 2.65vw;
+          padding: 0 0 0 11vw;
           &:after {
             content: "";
             position: absolute;
@@ -481,17 +482,19 @@
           .xtMember__team__memberList{
             left: 31vw;
             &:after {
-              background: #3742DB;
+              background: #0067e0;
               width: 45vw;
             }
           }
         }
         &.designer {
           .xtMember__team__memberList{
-            right: 41.5vw;
+            right: 23.0729vw;
             &:after {
-              background: #00BF6C;
-              width: 50vw;
+              background: #00e27b;
+              width: 58.4896vw;
+              right: 0;
+              left: initial;
             }
           }
         }
@@ -528,7 +531,7 @@
             position: relative;
             &:after {
               content: "";
-              background: url(~assets/web/images/life/develover.svg) no-repeat;
+              background: url(../../resources/images/life/develover.svg) no-repeat;
               background-size: contain;
               position: absolute;
               top: -4.3vw;
@@ -738,7 +741,7 @@
     transition: -webkit-clip-path 0.25s ease;
     transition: clip-path 0.25s ease;
     transition: clip-path 0.25s ease, -webkit-clip-path 0.25s ease;
-    line-height: 2em;
+    line-height: 2vw;
     &:nth-of-type(1) {
       --clip: inset(0 0 100% 0);
     }

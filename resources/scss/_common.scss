@@ -251,17 +251,14 @@ h1, h2, h3, h4, h5, h6, strong {
               position: absolute;
               font-size: 13px;
               font-weight: 700;
-
               &.m {
                 top: 3px;
                 left: 7px;
               }
-
               &.e {
                 top: 3px;
                 right: 7px;
               }
-
               &.n {
                 bottom: 3px;
                 left: 7px;
@@ -300,6 +297,45 @@ h1, h2, h3, h4, h5, h6, strong {
             }
             &.side-close {
               opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    &.txt-bk {
+      .xt-ci {
+        width: 82px;
+        height: 42px;
+        background: url(../images/common/logo-black.png) no-repeat 0 0;
+      }
+      .pdf-down {
+        color: #000;
+      }
+      .hamburger {
+        a {
+          div {
+            &.side-open {
+              opacity: 1;
+              @include solid-line(3px, #000);
+              span {
+                color: #000;
+              }
+            }
+            &.side-close {
+              @include solid-line(3px, #000);
+            }
+          }
+          &.on {
+            div {
+              transition-property: opacity;
+              transition-duration: 0.3s;
+              transition-delay: 0.3s;
+              &.side-open {
+                opacity: 0;
+              }
+              &.side-close {
+                opacity: 1;
+              }
             }
           }
         }
@@ -375,43 +411,90 @@ h1, h2, h3, h4, h5, h6, strong {
   }
 }
 
-.footer {
-  padding: 0 0 3.6458vw 3.1250vw;
-  .copy {
-    font-size: 14px;
-    font-weight: 100;
-  }
-  .contact {
-    display: inline-block;
-    margin-left: 15px;
-    span {
-      font-size: 14px;
-      font-weight: 100;
-    }
-  }
-}
 
-.btnTop {
-  position: fixed;
-  right: 3.1250vw;
-  bottom: 3.6458vw;
-  width: 42px;
-  height: 42px;
-  border: 1px solid #000;
+/* button */
+.btnBlack {
+  --borderWidth: 2;
+  --boxShadowDepth: 8;
+  --buttonColor: #000;
+  --fontSize: 1;
+  --horizontalPadding: 16;
+  --verticalPadding: 8;
+  background: transparent;
+  border: calc(var(--borderWidth) * 1px) solid var(--buttonColor);
+  /*box-shadow: calc(var(--boxShadowDepth) * 1px) calc(var(--boxShadowDepth) * 1px) 0 #888;*/
+  color: var(--buttonColor);
+  cursor: pointer;
+  font-size: 0.7292vw;
+  outline: transparent;
+  padding: calc(var(--verticalPadding) * 1px) calc(var(--horizontalPadding) * 1px);
+  position: relative;
+  -webkit-transition: box-shadow 0.15s ease;
+  transition: box-shadow 0.15s ease;
+  width: 9.3750vw;
+  height: 3.1250vw;
   span {
-    text-align: center;
-    font-size: 13px;
-    &.t {
-      display: block;
-      position: relative;
-      top: 4px;
+    -webkit-clip-path: var(--clip);
+    bottom: calc(var(--borderWidth) * -1px);
+    clip-path: var(--clip);
+    left: calc(var(--borderWidth) * -1px);
+    position: absolute;
+    right: calc(var(--borderWidth) * -1px);
+    top: calc(var(--borderWidth) * -1px);
+    z-index: 1;
+    &:hover {
+      --clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      z-index: 2;
+    }
+    &:nth-of-type(1):hover,&:nth-of-type(2):hover,&:nth-of-type(3):hover,&:nth-of-type(4):hover {
+      --clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      z-index: 2;
+    }
+    &:nth-of-type(1):hover ~ b:nth-of-type(1),&:nth-of-type(2):hover ~ b:nth-of-type(2),&:nth-of-type(3):hover ~ b:nth-of-type(3),&:nth-of-type(4):hover ~ b:nth-of-type(4) {
+      --clip: inset(0 0 0 0);
+    }
+    &:nth-of-type(1) {
+      --clip: polygon(0 0, 100% 0, 50% 50%, 50% 50%);
+    }
+    &:nth-of-type(2) {
+      --clip: polygon(100% 0, 100% 100%, 50% 50%);
+    }
+    &:nth-of-type(3) {
+      --clip: polygon(0 100%, 100% 100%, 50% 50%);
+    }
+    &:nth-of-type(4) {
+      --clip: polygon(0 0, 0 100%, 50% 50%);
     }
   }
-  div {
-    display: flex;
-    justify-content: center;
-    span {
-      margin: 0 2px;
+  b {
+    -webkit-clip-path: var(--clip);
+    background: var(--buttonColor);
+    border: calc(var(--borderWidth) * 1px) solid var(--buttonColor);
+    bottom: calc(var(--borderWidth) * -1px);
+    /*font-weight: bold;*/
+    clip-path: var(--clip);
+    color: #fff;
+    left: calc(var(--borderWidth) * -1px);
+    padding: calc(var(--verticalPadding) * 1px) calc(var(--horizontalPadding) * 1px);
+    position: absolute;
+    right: calc(var(--borderWidth) * -1px);
+    top: calc(var(--borderWidth) * -1px);
+    -webkit-transition: -webkit-clip-path 0.25s ease;
+    transition: -webkit-clip-path 0.25s ease;
+    transition: clip-path 0.25s ease;
+    transition: clip-path 0.25s ease, -webkit-clip-path 0.25s ease;
+    line-height: 2em;
+    &:nth-of-type(1) {
+      --clip: inset(0 0 100% 0);
+    }
+    &:nth-of-type(2) {
+      --clip: inset(0 0 0 100%);
+    }
+    &:nth-of-type(3) {
+      --clip: inset(100% 0 0 0);
+    }
+    &:nth-of-type(4) {
+      --clip: inset(0 100% 0 0);
     }
   }
 }

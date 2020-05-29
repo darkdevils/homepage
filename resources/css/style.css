@@ -2211,6 +2211,185 @@ button.swiper-pagination-bullet {
 .work__content .main-contact {
   top: 0; }
 
+.contactContent {
+  position: relative;
+  padding: 11vw 0 0; }
+  .contactContent h1 {
+    margin-left: 14.4792vw; }
+    .contactContent h1 span {
+      position: relative;
+      font-size: 5.2083vw;
+      font-weight: 700; }
+      .contactContent h1 span:before, .contactContent h1 span:after {
+        content: "";
+        top: 0;
+        bottom: 0;
+        display: inline-block;
+        position: absolute; }
+      .contactContent h1 span:before {
+        background: #fff;
+        width: 100%; }
+      .contactContent h1 span:after {
+        background: #000; }
+    .contactContent h1.aos-animate span:before {
+      right: 0;
+      width: 0;
+      -webkit-transition: width 1.1s ease-in-out;
+      transition: width 1.1s ease-in-out;
+      transition-delay: 0.5s; }
+    .contactContent h1.aos-animate span:after {
+      -webkit-animation: typo01-after 1s ease-in-out;
+      animation-delay: 0.5s; }
+  .contactContent .textWrap {
+    margin-left: 14.4792vw; }
+    .contactContent .textWrap span {
+      position: relative;
+      font-size: 3.6458vw;
+      font-weight: 300; }
+      .contactContent .textWrap span:before, .contactContent .textWrap span:after {
+        content: "";
+        top: 0;
+        bottom: 0;
+        display: inline-block;
+        position: absolute; }
+      .contactContent .textWrap span:before {
+        background: #fff;
+        width: 100%; }
+      .contactContent .textWrap span:after {
+        background: #000; }
+    .contactContent .textWrap.aos-animate span:before {
+      right: 0;
+      width: 0;
+      -webkit-transition: width 1.1s ease-in-out;
+      transition: width 1.1s ease-in-out;
+      transition-delay: 0.8s; }
+    .contactContent .textWrap.aos-animate span:after {
+      -webkit-animation: typo01-after 1s ease-in-out;
+      animation-delay: 0.8s; }
+  .contactContent .address {
+    position: absolute;
+    top: 19.8958vw;
+    right: 14.4792vw;
+    text-align: right;
+    line-height: 2em; }
+    .contactContent .address span {
+      position: relative;
+      font-size: 1.0417vw;
+      font-weight: 500; }
+      .contactContent .address span:before, .contactContent .address span:after {
+        content: "";
+        top: 0;
+        bottom: 0;
+        display: inline-block;
+        position: absolute; }
+      .contactContent .address span:before {
+        background: #fff;
+        width: 100%; }
+      .contactContent .address span:after {
+        background: #000; }
+    .contactContent .address.aos-animate span:before {
+      right: 0;
+      width: 0;
+      -webkit-transition: width 1.1s ease-in-out;
+      transition: width 1.1s ease-in-out;
+      transition-delay: 0.8s; }
+    .contactContent .address.aos-animate span:after {
+      -webkit-animation: typo01-after 1s ease-in-out;
+      animation-delay: 0.8s; }
+    .contactContent .address div {
+      margin-top: 10px; }
+  .contactContent .main-contact {
+    width: 100%;
+    padding: 0 14.4792vw;
+    top: -45px;
+    left: 0;
+    z-index: -1; }
+    .contactContent .main-contact:after {
+      width: calc(100% - 28.958564vw);
+      bottom: 0;
+      left: 14.479282vw; }
+  .contactContent .linkSection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8.8542vw; }
+    .contactContent .linkSection .box {
+      position: relative;
+      width: 33.3333vw;
+      height: 31.2500vw;
+      padding: 3.6458vw 0 0 3.8542vw; }
+      .contactContent .linkSection .box a {
+        position: relative; }
+      .contactContent .linkSection .box .title {
+        font-size: 1.0417vw;
+        font-weight: 300; }
+      .contactContent .linkSection .box .text {
+        padding: 1vw 0 0 0; }
+        .contactContent .linkSection .box .text span {
+          font-size: 2.0833vw;
+          font-weight: 700; }
+          .contactContent .linkSection .box .text span i {
+            position: relative;
+            font-style: normal; }
+            .contactContent .linkSection .box .text span i:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              right: 100%;
+              border: 1px solid #000;
+              visibility: hidden; }
+      .contactContent .linkSection .box:nth-child(1) {
+        margin-right: 2.2396vw; }
+      .contactContent .linkSection .box:nth-child(2) {
+        margin-left: 2.2396vw; }
+      .contactContent .linkSection .box--project {
+        background: url(../images/contact/contact_img01.png) no-repeat left bottom;
+        background-size: contain; }
+      .contactContent .linkSection .box--career {
+        background: url(../images/contact/contact_img02.png) no-repeat 20px bottom;
+        background-size: contain; }
+    .contactContent .linkSection .rightBottom {
+      position: absolute;
+      right: 63px;
+      bottom: 61px;
+      font-weight: 300;
+      font-size: 0.8333vw; }
+  .contactContent .mapWrap #map .mapboxgl-ctrl-bottom-left, .contactContent .mapWrap #map .mapboxgl-ctrl-bottom-right {
+    display: none; }
+  .contactContent .mapWrap #map .addr {
+    position: absolute;
+    left: 3.1250vw;
+    bottom: 20px;
+    font-size: 1.0417vw;
+    font-weight: bold;
+    color: #fff;
+    z-index: 2;
+    line-height: 2em; }
+  .contactContent .footer {
+    background: #000;
+    padding: 3.6458vw 0 3.3854vw 3.1250vw; }
+    .contactContent .footer span {
+      color: #fff; }
+
+/* page type */
+.blackType .wrapper .header.main .xt-ci {
+  width: auto;
+  min-width: 82px;
+  border: 3px solid #000;
+  background: url(../images/common/blacktype_topp_logo.png) no-repeat 0 0; }
+  .blackType .wrapper .header.main .xt-ci span {
+    display: none;
+    padding: 7px 14px 0 79px;
+    transition: .5s ease; }
+
+.blackType .wrapper .header.main .pdf-down {
+  color: #000; }
+
+.blackType .wrapper .header .hamburger a div.side-open {
+  border-color: #000; }
+  .blackType .wrapper .header .hamburger a div.side-open span {
+    color: #000; }
+
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {
   transition-duration: 50ms; }
 

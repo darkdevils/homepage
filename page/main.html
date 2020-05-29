@@ -10,6 +10,7 @@
   <script src="../resources/js/scrolloverflow.js"></script>
   <script src="../resources/js/fullpage.js"></script>
   <script src="../resources/js/swiper.js"></script>
+  <script src="../resources/js/masonry.pkgd.js"></script>
   <script src="../resources/js/common.js"></script>
   <title>Title</title>
 </head>
@@ -139,23 +140,47 @@
         <div class="main-portfolio">
           <div class="pt-list">
             <div class="pt-item">
-              <a href="#"><img src="../resources/images/main/pj-wellihilli.png">
-                <p class="pt-name"><span>2020</span>웰리힐리파크 통합사이트 구축</p></a>
+              <a href="#">
+                <span class="pt-img"><img src="../resources/images/main/pj-wellihilli.png"></span>
+                <p class="pt-name"><span>2020</span>웰리힐리파크 통합사이트 구축</p>
+                <div>
+                  <p>프로젝트 기간 : 2020.05~2020.05</p>
+                  <p>웰리힐리파크 통합사이트 구축</p>
+                </div>
+              </a>
             </div>
             <div class="pt-item">
-              <a href="#"><img src="../resources/images/main/pj-resorts.png">
-                <p class="pt-name"><span>2020</span>한화리조트 모바일앱 리뉴얼</p></a>
+              <a href="#">
+                <span class="pt-img"><img src="../resources/images/main/pj-hanwha.png"></span>
+                <p class="pt-name"><span>2020</span>한화 아쿠아플라넷 티켓몰 구축</p>
+                <div>
+                  <p>프로젝트 기간 : 2020.05~2020.05</p>
+                  <p>한화 아쿠아플라넷 티켓몰 구축</p>
+                </div>
+              </a>
             </div>
             <div class="pt-item">
-              <a href="#"><img src="../resources/images/main/pj-hanwha.png">
-                <p class="pt-name"><span>2020</span>한화 아쿠아플라넷 티켓몰 구축</p></a>
+              <a href="#">
+                <span class="pt-img"><img src="../resources/images/main/pj-resorts.png"></span>
+                <p class="pt-name"><span>2020</span>한화리조트 모바일앱 리뉴얼</p>
+                <div>
+                  <p>프로젝트 기간 : 2020.05~2020.05</p>
+                  <p>한화리조트 모바일앱 리뉴얼</p>
+                </div>
+              </a>
             </div>
             <div class="pt-item">
-              <a href="#"><img src="../resources/images/main/pj-kb.png">
-                <p class="pt-name"><span>2020</span>KB캐피탈 KB차차차3.0 리뉴얼</p></a>
+              <a href="#">
+                <span class="pt-img"><img src="../resources/images/main/pj-kb.png"></span>
+                <p class="pt-name"><span>2020</span>KB캐피탈 KB차차차3.0 리뉴얼</p>
+                <div>
+                  <p>2020.05~2020.05</p>
+                  <p>KB캐피탈 KB차차차3.0 리뉴얼</p>
+                </div>
+              </a>
             </div>
-            <p class="pt-more"><a href="#">MORE PROJECTS</a></p>
           </div>
+          <div class="btnMore"><button type="button" class="btnBlack">More Projects<span></span><span></span><span></span><span></span><b aria-hidden="true">More Projects</b><b aria-hidden="true">More Projects</b><b aria-hidden="true">More Projects</b><b aria-hidden="true">More Projects</b></button></div>
         </div>
       </section>
       <!-- // We make -->
@@ -211,55 +236,62 @@
 
 
 <script>
-$(function(){
-  AOS.init({
-    duration: 1200,
-    offset: 120,
-  });
-  var swiper = new Swiper('.swiper-container', {
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'fraction',
-      mousewheelControl: true,
-    },
-  });
-  $(window).resize(function () {
-    $(".swiper-slide").css("width", $(window).width());
-  });
-  var slideIndex  = 1, sliding     = false;
-  var length = $("#section2 .slide").length;
+  $(function(){
+    AOS.init({
+      /*duration: 1200,
+      offset: 120,*/
+      easing: 'ease-in-out-sine',
+    });
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+        mousewheelControl: true,
+      },
+    });
+    $(window).resize(function () {
+      $(".swiper-slide").css("width", $(window).width());
+    });
+    var slideIndex  = 1, sliding     = false;
+    var length = $("#section2 .slide").length;
 
 
-  $("#section2 .totalNum").text(length);
+    $("#section2 .totalNum").text(length);
 
-  $('#pagepiling').fullpage({
-    scrollingSpeed:500,
-    css3: true,
-    scrollOverflow: true,
-    onLeave: function(index, nextIndex, direction) {
-      if(index == 2 && !sliding) {
-        if(direction == 'down' && slideIndex < length) {
-          sliding = true;
-          $.fn.fullpage.moveSlideRight();
-          slideIndex++;
-          return false;
-        } else if(direction == 'up' && slideIndex > 1) {
-          sliding = true;
-          $.fn.fullpage.moveSlideLeft();
-          slideIndex--;
+    $('#pagepiling').fullpage({
+      scrollingSpeed:500,
+      css3: true,
+      scrollOverflow: true,
+      onLeave: function(index, nextIndex, direction) {
+        if(index == 2 && !sliding) {
+          if(direction == 'down' && slideIndex < length) {
+            sliding = true;
+            $.fn.fullpage.moveSlideRight();
+            slideIndex++;
+            return false;
+          } else if(direction == 'up' && slideIndex > 1) {
+            sliding = true;
+            $.fn.fullpage.moveSlideLeft();
+            slideIndex--;
+            return false;
+          }
+        } else if(sliding) {
           return false;
         }
-      } else if(sliding) {
-        return false;
+      },
+      afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+        sliding = false;
+        $("#section2 .changeNum").text(slideIndex + 1);
       }
-    },
-    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
-      sliding = false;
-      $("#section2 .changeNum").text(slideIndex + 1);
-    }
-  });
+    });
 
-});
+    var $grid1 = $('.pt-list').masonry({
+      itemSelector: '.pt-item',
+      columnWidth: '.pt-item',
+      horizontalOrder: true,
+      percentPosition: true,
+    });
+  });
 </script>
 </body>
 </html>

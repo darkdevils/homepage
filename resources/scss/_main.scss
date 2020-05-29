@@ -118,15 +118,11 @@
             }
           }
           &.active {
-            .swiper-wrapper {
-              .swiper-slide-active {
-                .weAre-txt {
-                  h2 {
-                    span {
-                      &:after {
-                        animation: proBar 3s 1s infinite alternate;
-                      }
-                    }
+            .weAre-txt {
+              h2 {
+                span {
+                  &:after {
+                    animation: proBar 3s 1s infinite alternate;
                   }
                 }
               }
@@ -185,40 +181,126 @@
             }
           }
         }
+        .fp-controlArrow {
+          display: none;
+        }
+        .number {
+          position: absolute;
+          left: 125px;
+          bottom: 90px;
+          width: 40px;
+          height: 60px;
+          background: url("../images/main/paging-line.png") no-repeat center;
+          z-index: 1;
+          span {
+            position: absolute;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            &:first-child {
+              left: 0;
+              bottom: 30px;
+            }
+            &:last-child {
+              right: 0;
+              bottom: 0;
+            }
+          }
+        }
       }
       #section3 {
         background: #fff;
         .main-portfolio {
-          position: relative;
+          padding: 11.9792vw 11.1979vw 3.1250vw;
           .pt-list {
-            position: relative;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            padding: 230px 12.23% 210px;
-            columns: 2;
+            width: 100%;
+            margin: 0 auto;
             .pt-item {
               position: relative;
-              width: 100%;
-              padding: 0 45px;
-              margin-bottom: 140px;
+              width: 38.8021vw;
+              padding: 0 2.3438vw;
+              margin-bottom: 7.2917vw;
               &:first-child {
-                margin-top: 120px;
+                margin-top: 6.2500vw;
               }
               a {
                 display: inline-block;
+                padding-left: 1.5625vw;
+                .pt-img {
+                  position: relative;
+                  display: inline-block;
+                  overflow: hidden;
+                  width: 100%;
+                  height: 100%;
+                  background: #000;
+                }
                 img {
                   width: 100%;
+                  height: auto;
+                  position: relative;
+                  display: block;
+                  -webkit-transition: opacity .5s, -webkit-transform .5s;
+                  transition: opacity .5s, transform .5s;
+                  -webkit-backface-visibility: hidden;
+                  backface-visibility: hidden;
+                }
+                &:hover {
+                  .pt-img {
+                    img {
+                      opacity: 0.4;
+                      -webkit-transform: scale3d(1.1, 1.1, 1);
+                      transform: scale3d(1.1, 1.1, 1);
+                    }
+                  }
                 }
                 p.pt-name {
                   position: absolute;
                   transform: rotate(-90deg);
                   transform-origin: -15px 15px;
-                  font-size: 14px;
+                  font-size: 0.7292vw;
                   span {
                     color: #ccc;
                     padding-right: 5px;
+                  }
+                }
+                div {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  font-size: 1.25em;
+                  p {
+                    display: inline-block;
+                    min-width: 50%;
+                    margin: 0 0 0.25em;
+                    padding: 1em;
+                    background: rgba(0,0,0,0.9);
+                    color: #fff;
+                    text-transform: none;
+                    font-weight: 500;
+                    font-size: 0.7292vw;
+                    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                    transition: opacity 0.35s, transform 0.35s;
+                    -webkit-transform: translate3d(-360px,100px,0);
+                    transform: translate3d(-360px,100px,0);
+                    opacity: 0;
+                    text-align: left;
+                    &:first-child {
+                      -webkit-transition-delay: 0.15s;
+                      transition-delay: 0.15s;
+                    }
+                    &:nth-of-type(2) {
+                      -webkit-transition-delay: 0.1s;
+                      transition-delay: 0.1s;
+                    }
+                  }
+                }
+                &:hover div {
+                  p {
+                    opacity: 1;
+                    -webkit-transform: translate3d(-50px,100px,0);
+                    transform: translate3d(-50px,100px,0);
                   }
                 }
               }
@@ -231,7 +313,7 @@
               line-height: 60px;
               left: 50%;
               bottom: 60px;
-              font-size: 14px;
+              font-size: 0.7292vw;
               text-align: center;
               margin-left: -90px;
               border: 2px solid #000;
@@ -246,12 +328,15 @@
       #section4 {
         text-align: right;
         padding-right: 60px;
-        background: #00c691 url(../images/main/life-bg.png) no-repeat center bottom;
+        background: #00c691 url(../images/main/life-bg.png) no-repeat center -100px;
         .main-life {
           position: relative;
           color: #fff;
           font-size: 20px;
           &:before {
+            background: #00c691;
+          }
+          &:after {
             background: #00c691;
           }
         }
@@ -272,13 +357,21 @@
             &:before {
               background: #00c691;
             }
+            &:after {
+              background: #00c691;
+            }
           }
         }
         .life-btn {
           a {
             color: #fff;
             font-size: 16px;
+
             &:before {
+              background: #00c691;
+            }
+
+            &:after {
               background: #00c691;
             }
           }
@@ -298,6 +391,7 @@
           transition: transform 1.5s,opacity 1.5s;
         }
         &.active {
+          background-position: center bottom;
           &:after {
             opacity: 1;
             transform: translate(0px,0px);

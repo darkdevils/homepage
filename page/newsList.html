@@ -56,47 +56,47 @@
         </header>
     </div>
 
-    <div class="news_content">
+    <div class="news-content">
         <div class="newslistWrap">
-          <div class="news_list">
+          <div class="news-list">
               <div class="item" data-aos="fade-up" data-aos-delay="100">
                   <a href="#">
-                      <img src="../resources/images/temp/news_temp01.jpg">
+                      <span class="news-img"><img src="../resources/images/temp/news_temp01.jpg"></span>
                       <p class="news-tit">한화리조트 모바일앱 그랜드 오픈</p>
                       <span class="new-desc">2020.03.02</span>
                   </a>
               </div>
               <div class="item" data-aos="fade-up" data-aos-delay="200">
                   <a href="#">
-                      <img src="../resources/images/temp/news_temp02.jpg">
+                      <span class="news-img"><img src="../resources/images/temp/news_temp02.jpg"></span>
                       <p class="news-tit">2020년 코로나바이러스에 따른 재택근무 안내</p>
                       <span class="new-desc">2020.03.02</span>
                   </a>
               </div>
-              <div class="item" data-aos="fade-up" data-aos-offset="100" data-aos-delay="300">
+              <div class="item" data-aos="fade-up" data-aos-delay="5">
                   <a href="#">
-                      <img src="../resources/images/temp/news_temp03.jpg">
+                      <span class="news-img"><img src="../resources/images/temp/news_temp03.jpg"></span>
                       <p class="news-tit">상반기 엑스티 결산 자료</p>
                       <span class="new-desc">2020.03.02</span>
                   </a>
               </div>
               <div class="item" data-aos="fade-up">
                   <a href="#">
-                      <img src="../resources/images/temp/news_temp04.jpg">
+                      <span class="news-img"><img src="../resources/images/temp/news_temp04.jpg"></span>
                       <p class="news-tit">공통 업무 매뉴얼 작성 및 공유</p>
                       <span class="new-desc">2020.03.02</span>
                   </a>
               </div>
               <div class="item" data-aos="fade-up">
                   <a href="#">
-                      <img src="../resources/images/temp/news_temp05.jpg">
+                      <span class="news-img"><img src="../resources/images/temp/news_temp05.jpg"></span>
                       <p class="news-tit">엑스티가 일하는 방식 책자 배포</p>
                       <span class="new-desc">2020.03.02</span>
                   </a>
               </div>
               <div class="item" data-aos="fade-up">
                   <a href="#">
-                      <img src="../resources/images/temp/news_temp06.jpg">
+                      <span class="news-img"><img src="../resources/images/temp/news_temp06.jpg"></span>
                       <p class="news-tit">KB차차차 3.0 오픈 및 유지운영 진행
                       </p>
                       <span class="new-desc">2020.03.02</span>
@@ -104,14 +104,14 @@
               </div>
               <div class="item" data-aos="fade-up">
                   <a href="#">
-                      <img src="../resources/images/temp/news_temp07.jpg">
+                      <span class="news-img"><img src="../resources/images/temp/news_temp07.jpg"></span>
                       <p class="news-tit">19년 엑스티 종무식 진행 안내</p>
                       <span class="new-desc">2020.03.02</span>
                   </a>
               </div>
               <div class="item" data-aos="fade-up">
                   <a href="#">
-                      <img src="../resources/images/temp/news_temp08.jpg">
+                      <span class="news-img"><img src="../resources/images/temp/news_temp08.jpg"></span>
                       <p class="news-tit">연말 엑스티 워크샵 안내</p>
                       <span>2020.03.02</span>
                   </a>
@@ -153,11 +153,6 @@
     <span class="p">P</span>
   </div>
 </a>
-<style>
-    .newslistWrap {padding: 0 9.1458vw;}
-    .news_list .item {width: 33.3333%;}
-    .news_list .item a {display:block;padding: 2.91665vw;box-sizing: border-box;}
-</style>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="../resources/js/aos.js"></script>
 <script src="../resources/js/scrolloverflow.js"></script>
@@ -172,16 +167,7 @@
             offset: 120,*/
             easing: 'ease-in-out-sine',
         });
-        var swiper = new Swiper('.swiper-container', {
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'fraction',
-                mousewheelControl: true,
-            },
-        });
-        $(window).resize(function () {
-            $(".swiper-slide").css("width", $(window).width());
-        });
+
         var slideIndex  = 1, sliding     = false;
         var length = $("#section2 .slide").length;
 
@@ -210,13 +196,15 @@
                 sliding = false;
             }
         });
-        var $grid = $('.news_list').masonry({
+        var $grid = $('.news-list').masonry({
             itemSelector: '.item',
             columnWidth: '.item',
-            /*gutter: 110,*/
             horizontalOrder: true,
             percentPosition: true,
         });
+
+        var wd = $(".news-img").width();
+        $(".news-img").css({"width":wd, "height": "auto"});
     });
 </script>
 </body>

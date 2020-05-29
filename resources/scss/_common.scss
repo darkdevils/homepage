@@ -398,13 +398,42 @@ h1, h2, h3, h4, h5, h6, strong {
         }
       }
     }
-    &.w-txt {
+    &.txt-bk {
+      .xt-ci {
+        width: 82px;
+        height: 42px;
+        background: url(../images/common/logo-black.png) no-repeat 0 0;
+      }
       .pdf-down {
-        color: #fff;
+        color: #000;
       }
       .hamburger {
         a {
-
+          div {
+            &.side-open {
+              opacity: 1;
+              @include solid-line(3px, #000);
+              span {
+                color: #000;
+              }
+            }
+            &.side-close {
+              @include solid-line(3px, #000);
+            }
+          }
+          &.on {
+            div {
+              transition-property: opacity;
+              transition-duration: 0.3s;
+              transition-delay: 0.3s;
+              &.side-open {
+                opacity: 0;
+              }
+              &.side-close {
+                opacity: 1;
+              }
+            }
+          }
         }
       }
     }

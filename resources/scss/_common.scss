@@ -324,7 +324,7 @@ h1, h2, h3, h4, h5, h6, strong {
             &.side-close {
               @include solid-line(3px, #000);
             }
-          }
+          }  
           &.on {
             div {
               transition-property: opacity;
